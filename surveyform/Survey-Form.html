@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="This survey is to find out if you are a gamer.">
+      <meta name="author" content="Conor Brooke">
+      <meta name="keywords" content="survey, gamer, Minecraft, epic">
+      <title>Are You A Gamer?</title>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+      </script>
+
+      <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+      <main id="grid-container">
+        <sector id="form-group">
+          <header>
+            <h1 id="title">You Think Your A <span>Gamer?</span></h1>
+            <p id="description">Take this quick and easy test to find out</p>
+          </header>
+          <form id="survey-form">
+            <div id="center">
+              <div class="form-class">
+                <label for="name" id="name-label" >Name:</label>
+                <input type="text" id="name" name="name" class="form-class1" placeholder="Enter Name" required>
+              </div>
+              <div class="form-class">
+                <label for="Email" id="email-label" >Email:</label>
+                <input type="email" id="email" name="Email" class="form-class1" placeholder="Enter Email" required>
+              </div>
+              <div class="form-class">
+                <label for="age" id="number-label" >Age:</label>
+                <input type="number" id="number" name="age" class="form-class1" placeholder="(Optional)"  min="0" max="120">
+              </div>
+
+              <div class="form-class">
+                <label id="dropdown-label" for="platfrom">Platform of choice?</label>
+                <select id="dropdown" name="platform">
+                  <option disabled selected value>Select option</option>
+                  <option value="PC">PC</option>
+                  <option value="Xbox">Xbox</option>
+                  <option value="Playstation">Playstaion</option>
+                  <option value="Nintendo">Nintendo</option>
+                  <option value="Mobile">Mobile</option>
+                </select>
+              </div>
+              <div class="form-class">
+                <label id="dropdown-label" for="genre">Favourite Gaming Genre?</label>
+                <select id="dropdown1" name="genre">
+                  <option disabled selected value>Select option</option>
+                  <option value="action">Action</option>
+                  <option value="FPS">FPS</option>
+                  <option value="role-playing">Role-playing</option>
+                  <option value="mmo">MMO</option>
+                  <option value="sport">Sport</option>
+                  <option value="adventure">Adventure</option>
+                  <option value="strategy">Strategy</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-class2">
+                <p class="radio-text">Have you ever purchased in-game currency?</p>
+                <label> 
+                  <input type="radio" name="in-game" class="in-game" value="choice1">
+                  Yes
+                </label>
+                <label>
+                  <input type="radio" name="in-game" value="choice2"class="in-game" >
+                  No
+                </label>
+                <label>
+                  <input type="radio" name="in-game" class="in-game" value="choice3" checked>
+                  Too ashamed to say
+                </label>
+                <div class="form-class2">
+                  <p class="radio-text">How many hours do you spend on games a day?</p>
+                  <label>
+                    <input type="radio" name="hours" class="in-game" value="choice4">
+                    1 to 2 hours
+                  </label>
+                  <label>
+                    <input type="radio" name="hours" class="in-game" value="choice5">
+                    2 to 4 hours
+                  </label>
+                  <label>
+                    <input type="radio" name="hours" class="in-game" value="choice6">
+                    4 to 8 hours
+                  </label>
+                  <label>
+                    <input type="radio" name="hours" class="in-game" value="choice7">
+                    8+
+                  </label>
+              </div>
+              <div class="form-class2">
+                <p class="radio-text">How long have you been playing Video games?</p>
+                <label for="year1">
+                  <input type="checkbox" id="year1" name="year1" value="year1" class="check">
+                  1 Year
+                </label>
+                <label for="year2">
+                  <input type="checkbox" id="year2" name="year2" value="year2" class="check"> 
+                  2-4 Years
+                </label>
+                <label for="year5">
+                  <input type="checkbox" id="year5" name="year5" value="year5" class="check">
+                  5-10 Years
+                </label>
+                <label for="year10">
+                 <input type="checkbox" id="year10" name="year10" value="year10" class="check">
+                  10+ Years
+                </label>
+              </div>
+              <div class="form-class2">
+                <label id="fav" for="fav-game">What is your favourite game?</label>
+                <input id="text" type="text" name="fav-game">
+              </div>
+              <div class="form-class2">
+                <label for="text-area">Why is it your favourite?</label>
+                <textarea name="text-area" id="text-area" rows="8" cols="87"  placeholder="Enter your reason here...">
+                  
+                </textarea>
+              </div>
+              <div class="form-class2" id="submit1">
+                <a href="Survey-Form.html" alt="form">
+                  <button id="submit" value="submit" type="submit">Submit</button>
+                </a>
+              </div>
+            </div>
+          </form>
+        </sector>
+      </main>
+      <footer>
+        <p class="footer-text">&copy Conor Brooke LTD 2020</p>
+      </footer>
+    </body>
+  </html>
+

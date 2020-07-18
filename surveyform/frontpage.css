@@ -1,0 +1,129 @@
+/* Main Website changes */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+html {
+    background: url(controller.jpg) no-repeat fixed;
+    background-size: cover;
+    
+}
+
+
+.grid-container { 
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+}
+
+.mid-section {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1.8fr 2.2fr;
+    grid-template-rows: 2fr 2fr;
+    height: 54.28em;
+}
+
+/* The usable side of the Website */
+
+#usable { 
+    display: grid;
+    grid-template-rows: 2.5em 2fr 2fr;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 1.4em;
+    width: 1.7em;
+    align-self: flex-end;
+    margin-top: 1em;
+
+}
+
+
+header {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 1.7fr 2.3fr;
+}
+
+h1 {
+    grid-row: 2/3;
+    font-size: 5.2em;
+    color: white;
+}
+
+#gamer {
+    color: #48A9A6;
+}
+
+#button { 
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #48A9A6;
+    padding: 1em 2.5em 1em 2.5em;
+    
+}
+
+#button h2 {
+    color: #874AC1;
+}
+
+a {
+    margin: auto;
+    text-decoration: none;
+}
+
+#button:hover {
+    padding-left: 3em; 
+    padding-top: 1.2em; 
+    padding-right: 3em; 
+    padding-bottom: 1.2em; 
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    width: auto;
+    height: 2.3em;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#form { 
+    align-self: flex-end;
+    padding-right: 8em;
+    padding-top: 0.3em;
+
+}
+
+#footer-text {
+    align-self: flex-start;
+    padding-left: 10em;
+    padding-top: 0.3em;
+}
+
+#email {
+    height: 1.6em;
+    width: 16em;
+
+}
+
+label {
+    padding-right: 0.8em;
+}
