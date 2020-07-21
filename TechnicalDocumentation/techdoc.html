@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Technical Documentation | CSS</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Conor Brooke">
+        <meta name="keywords" content="Css, Technical Documentation, JS, HTML">
+        <meta name="description" content="This is a Technical Documentation on Css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>
+                <h1>
+                    CSS <span>Documentation</span>
+                </h1>
+            </header>
+            <ul>
+                <a class="nav-link" href="#What_Is_CSS" alt="Page-link"><li>What Is CSS</li></a>
+                <a class="nav-link" href="#Anatomy_Of_CSS_Ruleset" alt="Page-link"><li>Anatomy Of CSS Ruleset</li></a>
+                <a class="nav-link" href="#All_about_boxes_-_CSS" alt="Page-link"><li>All about boxes - CSS</li></a>
+                <a class="nav-link" href="#Styling_the_main_page_title" alt="Page-link"><li>Styling the main page title</li></a>
+                <a class="nav-link" href="#Fonts_and_text" alt="Page-link"><li>Fonts and text</li></a>
+                <a class="nav-link" href="#Conclusion" alt="Page-link"><li>Conclusion</li></a>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="What_Is_CSS">
+                <header class="sec-header">
+                   What Is CSS
+                </header>
+    
+                <p class="para">
+                    Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a <br>style sheet language. CSS is what you use to selectively style HTML elements. For example,<br> this CSS selects paragraph text, setting the color to red:
+                </p>
+                <code class="code">p { <br>
+                    color: <span>red;</span><br>
+                    }
+                </code>
+                <p class="para">Let's try it out! Using a text editor, paste the three lines of CSS (above) into a new file. Save the <br> file as style.css in a directory named styles. If your paragraph text is red, congratulations! Your CSS is working.</p>
+            </section>
+            <section class="main-section" id="Anatomy_Of_CSS_Ruleset">
+                <header class="sec-header"> 
+                    Anatomy Of CSS Ruleset
+                </header>
+                <p class="para">Let's dissect the CSS code for red paragraph text to understand how it works. <br>The whole structure is called a ruleset.</p>
+                <ul class="ruleset">
+                    <li>
+                        <h2>
+                            Selector
+                        </h2>
+                        <p>
+                            This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <code class="inline"><p></code> elements). <br>To style a different element, change the selector.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>
+                            Declaration
+                        </h2>
+                        <p>
+                            This is a single rule like <code class="inline">color: red;.</code><br> It specifies which of the element's properties you want to style.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>
+                            Properties
+                        </h2>
+                        <p>
+                            These are ways in which you can style an HTML element. (In this example, <code class="inline">color</code> is a property of the <code class="inline"><p></code> elements.) In CSS, you choose which properties you want to affect in the rule.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>
+                            Property value
+                        </h2>
+                        <p>
+                            To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property.<br> (For example, there are many color values in addition to <code class="inline">red.</code>)
+                        </p>
+                    </li>
+                    <li>
+                        <h2>
+                            Selecting multiple elements
+                        </h2>
+                        <p>
+                            You can also select multiple elements and apply a single ruleset to all of them. Separate multiple selectors by commas. For example:
+                        </p>
+                    </li>
+                </ul>
+                <code class="code" id="code2">p, li, h1 { <br>
+           
+                    color: <span id="blue">blue;</span><br>
+               
+                    }
+                </code>
+            </section>
+            <section class="main-section" id="All_about_boxes_-_CSS">
+                <header class="sec-header">
+                    All about boxes - CSS
+                </header>
+                <p class="para">Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position.<br> Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.</p>
+                <p class="para">CSS layout is mostly based on the box model. Each box taking up space on your page <br>has properties like:</p>
+                <ul id="ruleset1" class="ruleset">
+                    <li>padding, the space around the content. In the example below, it is the space around the paragraph text.</li>
+                    <li>border, the solid line that is just outside the padding</li>
+                    <li>margin, the space around the outside of the border.</li>
+                </ul>
+                <code id="code1" class="code">
+                   <span id="green">body</span> {<br>
+                        width: 600px;<br>
+                        margin: 0 auto;<br>
+                        background-color: #FF9500;<br>
+                        padding: 0 20px 20px 20px;<br>
+                        border: 5px solid black;<br>
+                      }
+                </code>
+            </section>
+            <section class="main-section" id="Styling_the_main_page_title">
+                <header class="sec-header">
+                    Styling the main page title
+                </header>
+                <p class="para">You may have noticed there's a horrible gap at the top of the body. That happens because browsers apply default <br>styling to the <code class="inline"><h1.></code> element (among others). That might seem like a bad idea, but the intent is to provide basic readability for unstyled pages. <br>To eliminate the gap, we overwrite the browser's default styling with the setting <code class="inline">margin: 0;</code>.</p>
+                <code class="code"><span id="green">h1</span> {<br>
+                    margin: 0; <br>
+                    padding: 20px 0;    <br>
+                    color: #00539F;<br>
+                    text-shadow: 3px 3px 1px black;<br>
+                  }
+                </code>
+                <p class="para">Next, we set the heading's top and bottom padding to 20 pixels. Following that, we set the heading text to be the same color as the HTML background color.<br>  Finally, text-shadow applies a shadow to the text content of the element. Its four values are:</p>
+                <ul id="ruleset1" class="ruleset">
+                    <li>The first pixel value sets the horizontal offset of the shadow from the text: how far it moves across.</li>
+                    <li>The second pixel value sets the vertical offset of the shadow from the text: how far it moves down.</li>
+                    <li>The third pixel value sets the blur radius of the shadow. A larger value produces a more fuzzy-looking shadow. </li>
+                </ul>
+            </section>
+            <section class="main-section" id="Fonts_and_text">
+                <header class="sec-header">
+                    Fonts and text
+                </header>
+                <p class="para">Now that we've explored some CSS fundamentals, let's improve the appearance of the <br>example by adding more rules and information to the <code class="inline">style.css</code> file.</p>
+                <code class="code">
+                    < <span id="blue">link</span> <span id="green">href</span>="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+                </code>
+                <p class="para">Add the following lines (shown below), replacing the font-family assignment with your font-family selection from What will your website look like?.<br> The property font-family refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since <br> is the parent element of the whole page, all elements inside it inherit the same font-size and font-family.</p>
+            </section>
+            <section class="main-section" id="Conclusion">
+                <header class="sec-header">
+                    Conclusion
+                </header>
+                <p id="Conclusion_par" class="para">If you followed all the instructions in this article, you should have a page that looks similar to <br>this one: <br><br></p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#Fonts_and_text" alt="reference"><p class="para"> If you get stuck, you can always compare your work with our finished example code on GitHub.
+                    <br>
+                    In this exercise, we have just scratched the surface of CSS. To go further, see Learning to style HTML using CSS.</p></a>
+            </section>
+        </main>
+    </body>
+</html>
+
